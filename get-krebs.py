@@ -19,4 +19,4 @@ last_post = all_posts[0]
 #Getting just the data contained in paragraph tags
 post_body = last_post.select('p')
 
-print postbody
+print post_body
