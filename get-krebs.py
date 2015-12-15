@@ -1,9 +1,12 @@
 #Import urllib2
 import urllib2
-#Import BeautifulSoup
-from bs4 import BeautifulSoup
 #Import RegEx
 import re
+#Import BeautifulSoup
+try:
+  from bs4 import BeautifulSoup
+except: ImportError
+  raise ImportError('No BeautifulSoup module found. Install BeautifulSoup before running this script.')
 
 #Storing the URL and corresponding data in variables
 url = 'https://krebsonsecurity.com'
