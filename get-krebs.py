@@ -9,7 +9,7 @@ if sys.version[0] < 3:
   import re
   #Import BeautifulSoup
   import beautifulsoup
-else
+else:
   from urllib.request import urlopen
   import re
   try:
