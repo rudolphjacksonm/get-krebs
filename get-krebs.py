@@ -8,12 +8,12 @@ if sys.version[0] < 3:
   # Import RegEx
   import re
   #Import BeautifulSoup
-  import beautifulsoup
+  from bs4 import beautifulsoup
 else:
   from urllib.request import urlopen
   import re
   try:
-    from bs4 import BeautifulSoup
+    import BeautifulSoup
   except: ImportError
     raise ImportError('No BeautifulSoup module found. Install BeautifulSoup before running this script.')
 
