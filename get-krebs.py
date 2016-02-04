@@ -2,7 +2,7 @@
 import sys
 
 # Python 2.7
-if sys.version[0] < 3
+if sys.version[0] < 3:
   # Import urllib2
   import urllib2
   # Import RegEx
